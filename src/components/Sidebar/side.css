@@ -1,0 +1,75 @@
+.side-bar{
+    display: inline-flex;
+    flex-direction: column;
+    background-color: rgb(115, 179, 235);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 20%;
+    position: sticky;
+    transition: 150ms transform;
+    height: 100vh;
+}
+.side-bar::-webkit-scrollbar{
+    display: none;
+}
+@media(max-width:636px){
+    .side-bar{
+        display: none;
+    }
+}
+.show{
+    transform: translateX(0);
+}
+.hide{
+    transform: translateX(-200px);
+}
+@media(max-width:1226px){
+    .hide{
+        transform: translateX(-50px);
+    }
+}
+.recent-heading-con{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    transition: 150ms;
+    padding-top: 2rem;
+}
+.arrow{
+    height: 30px;
+    width: 50px;
+    background: transparent;
+    position: absolute;
+    right: -10px;
+    outline: none;
+    border: 0;
+    font-size: 1.2rem;
+}
+.content{
+    opacity: 1;
+}
+.recents{
+    padding-left: 0;
+    list-style-type: none;
+    background-color: rgb(231, 231, 231);
+    padding: 1rem;
+    font-family: 1rem;
+    opacity: 0;
+    transition: 150ms,opacity;
+    height: 100%;
+    overflow-y: scroll;
+}
+.recents::-webkit-scrollbar{
+    display: none;
+}
+.recents p{
+    padding: 0.5rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.list-con{
+    opacity: 1;
+}

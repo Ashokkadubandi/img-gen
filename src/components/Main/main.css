@@ -1,0 +1,73 @@
+.main-content{
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.main-content::-webkit-scrollbar{
+    display: none;
+}
+.heading-container{
+    display: flex;
+    justify-content: center;
+}
+.heading{
+    color: rgb(129, 129, 238);
+    font-size: 3rem;
+    
+}
+.query-container{
+    padding-left: 1rem;
+    padding-right: 8rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-bottom: 2rem;
+}
+.query-container .query{
+    align-self: flex-end;
+    padding: 1rem;
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+}
+.input-container{
+    position: fixed;
+    display: flex;
+    bottom: 2px;
+    left: 30%;
+    right: 30%;
+    align-items: center;
+    background-image: linear-gradient(to right,rgb(226, 127, 127),rgb(74, 74, 161));
+    align-self: center;
+    border-radius: 10px;
+}
+.input-container input{
+    border: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    width: 90%;
+    padding: 0.8rem;
+    color: aliceblue;
+    font-size: 1rem;
+    background-color: transparent;
+}
+.input-container input::placeholder{
+    color: rgb(25, 25, 26);
+    font-size: 1rem;
+    padding: 0.2rem;
+}
+.input-container .sent{
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+.dynamic{
+    padding: 1rem;
+    line-height: 2.8;
+    
+}
